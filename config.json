@@ -1,0 +1,6 @@
+{
+    "interface":"wlp2s0",
+    "logger": {
+        "url":"postgresql://cardinal@localhost/openap"
+    }
+}

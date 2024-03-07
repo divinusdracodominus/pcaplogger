@@ -1,0 +1,20 @@
+[package]
+name = "capture"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+postgresql = ["dep:tokio-postgres"]
+default = ["postgresql"]
+[dependencies]
+pcap = "*"
+packet = { git = "https://github.com/divinusdracodominus/rust-packet" }
+tokio = { version = "*", features = ["full"]}
+err-derive = "*"
+async-trait = "*"
+tokio-postgres = { version = "*", optional = true }
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+structopt = "*"
+hwaddr = "*"
